@@ -8,14 +8,15 @@ axios
    
     const ctx = document.getElementById('my-chart').getContext('2d');
     const chart = new Chart(ctx, {
-      type: 'line',
+      type: 'bar',
       data: {
         labels: bitcoinDates,
         datasets: [
           {
             label: 'Price',
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
+            backgroundColor: 'rgb(240, 174, 34)',
+            borderColor: 'rgb(27, 25, 28)',
+            borderWidth: 2,
             data: bitcoinPrices
           }
         ]
